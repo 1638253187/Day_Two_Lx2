@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/tv_top_commentsName"
+        android:layout_toRightOf="@+id/iv_header"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/bbb"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="斑鸠妹子"
+        />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/iv_header"
+        android:background="#F4F3EE"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="100dp"
+            android:padding="12dp"
+            android:layout_height="110dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/bbb"
+            android:text="你好啊啊啊"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iv_thumbnail"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
